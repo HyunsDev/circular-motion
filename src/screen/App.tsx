@@ -68,7 +68,7 @@ function App() {
 
       <LabelController />
 
-      <a href="https://github.com/HyunsDev/pendulum" target={"_blank"} rel="noreferrer">
+      <a href="https://github.com/HyunsDev/circular-motion" target={"_blank"} rel="noreferrer">
         <GithubIcon /> 
       </a>
 

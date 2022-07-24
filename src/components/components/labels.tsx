@@ -45,7 +45,6 @@ function LabelController(props: {}) {
         <Controller right={20} top={20} minWidth={200}>
             <Labels>
                 <Label name={'ups'} value={ups} />
-                <Label name={'주기'} value={`${lastTime.loopDiff} loops (${lastTime.time}ms)`} />
                 
             </Labels>
         </Controller>
