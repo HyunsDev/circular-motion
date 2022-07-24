@@ -71,7 +71,7 @@ function ResultController(props: {}) {
                 {!data?.data.isRelease && <Label name={'각속도'} value={`${round((data?.data.angularVelocity|| 0) * 60 * 180 / Math.PI, 2) }°/s`} />}
                 {!data?.data.isRelease && <Label name={'각가속도'} value={`${round((data?.data.angularAcceleration || 0) * 60 * 180 / Math.PI, 2) }°/s²`} />}
                 {!data?.data.isRelease && <Label name={'구심가속도'} value={`${round(((data?.data.length || 0) * (data?.data.angularVelocity || 0) ** 2) * 60, 2) }m/s²`} />}
-                {!data?.data.isRelease && <Label name={'구심력'} value={`${round(((data.data.weight || 0) * (data?.data.length || 0) * (data?.data.angularVelocity || 0) ** 2) * 60, 2) }j`} />}
+                {!data?.data.isRelease && <Label name={'구심력'} value={`${round(((data.data.weight || 0) * (data?.data.length || 0) * (data?.data.angularVelocity || 0) ** 2) * 60, 2) }N`} />}
                 {data?.data.isRelease && <Label name={'속력'} value={`${round(Math.sqrt(data.data.speed2[0]**2 +  data.data.speed2[1]**2), 2)} m/s`} />}
                 <Label name={'위치'} value={`${round(data?.data.vector[0] || 0, 0)}, ${round(data?.data.vector[1] || 0, 0)}`} />
                 
